@@ -1,3 +1,8 @@
+/* Apply the fonts globally */
+body {
+    font-family: 'Roboto', sans-serif;  /* Use Roboto for body text */
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -28,6 +33,7 @@ body {
 }
 
 .hero h1 {
+    font-family: 'Poppins', sans-serif; /* Use Poppins for headings */
     font-size: 3rem;
     font-weight: bold;
 }
@@ -64,6 +70,7 @@ body {
 }
 
 #about-me h2 {
+    font-family: 'Poppins', sans-serif; /* Poppins for About Me heading */
     font-size: 2rem;
 }
 
@@ -78,6 +85,7 @@ body {
 }
 
 #skills h2 {
+    font-family: 'Poppins', sans-serif; /* Poppins for Skills heading */
     font-size: 2rem;
 }
 
@@ -132,7 +140,7 @@ body {
     }
 
     to {
-        width: 40ch;
+        width: 39ch;
     }
 }
 

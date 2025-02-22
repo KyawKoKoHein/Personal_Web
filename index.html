@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -36,7 +38,7 @@
         <div class="container d-flex flex-column flex-lg-row align-items-center">
             <div class="text-center text-lg-start fade-in">
                 <h1>Welcome to My Portfolio</h1>
-                <p class="lead typing-effect" id="typingText"></p>
+                <p class="lead typing-effect" id="typingText" style="font-size: 22px;"></p>
                 <div>
                     <a href="KyawKoKoHein_Cv.pdf" class="btn btn-light" download>Download CV</a>
                 </div>
@@ -66,34 +68,36 @@
                 <div class="col-md-6 fade-in" id="skills">
                     <h2>Skills</h2>
                     <div class="skill-bar">
-                        <p>Java & Spring Boot <i class="fa-brands fa-java fs-1"></i> </p>
+                        <p> Java & SpringBoot <i class="fa-brands fa-java fs-1 mx-2"></i> <img
+                                src="./img/Spring_Boot.svg" style="width: 35px;"> </p>
                         <div class="bar">
                             <div class="progress java"></div>
                         </div>
                     </div>
 
                     <div class="skill-bar">
-                        <p>JavaScript & Angular <i class="fa-brands fa-js fs-2"></i> <i
+                        <p> JavaScript & Angular <i class="fa-brands fa-js fs-2 mx-2"></i> <i
                                 class="fa-brands fa-angular fs-2"></i></p>
                         <div class="bar">
                             <div class="progress js"></div>
                         </div>
                     </div>
                     <div class="skill-bar">
-                        <p> PHP & laravel <i class="fa-brands fa-php fs-2"></i> <i
+                        <p> PHP & Laravel <i class="fa-brands fa-php fs-2 mx-2"></i> <i
                                 class="fa-brands fa-laravel fs-2"></i></p>
                         <div class="bar">
                             <div class="progress php"></div>
                         </div>
                     </div>
                     <div class="skill-bar">
-                        <p>Apache Tomcat <img src="./img/Apache_Tomcat_logo.svg" style="width: 50px;"> </p>
+                        <p> Apache Tomcat <img src="./img/Apache_Tomcat_logo.svg" class="mx-2" style="width: 50px;">
+                        </p>
                         <div class="bar">
                             <div class="progress apache-tomcat"></div>
                         </div>
                     </div>
                     <div class="skill-bar">
-                        <p>Databases <i class="fa-solid fa-database fs-2"></i></p>
+                        <p> Databases <i class="fa-solid fa-database fs-2 mx-2"></i></p>
                         <div class="bar">
                             <div class="progress databases"></div>
                         </div>
@@ -111,7 +115,9 @@
             <!-- First Company -->
             <div class="experience-item">
                 <h4>Myanmar Information Technology Pte. Ltd.</h4>
-                <p class="text-muted">January 2023 - October 2024</p>
+                <p class="">Developer</p>
+                <p class=""><strong>Dates:</strong> January 2023 - October 2024</p>
+                <!-- <p class="">January 2023 - October 2024</p> -->
                 <ul>
                     <li>Maintained and developed Core Banking APIs and Mobile Banking APIs</li>
                     <li>Developed API services</li>
@@ -126,7 +132,9 @@
             <!-- Current Company -->
             <div class="experience-item">
                 <h4>NTT DATA Myanmar</h4>
-                <p class="text-muted">October 2024 - Present</p>
+                <p>Junior System Engineer</p>
+                <p><strong>Dates:</strong> October 2024 - Present</p>
+                
                 <ul>
                     <li>Maintain and support the FIGW project, ensuring stable and efficient system performance.</li>
                     <li>Investigate customer incidents and inquiries, providing timely resolutions to minimize
