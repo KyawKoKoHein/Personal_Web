@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="hero text-white text-center d-flex align-items-center justify-content-center">
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <div class="text-center text-lg-start fade-in">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="lead typing-effect" id="typingText"></p>
+                <div>
+                    <a href="KyawKoKoHein_Cv.pdf" class="btn btn-light" download>Download CV</a>
+                </div>
+            </div>
+
+            <div class="hero-image mt-5 mt-lg-0 fade-in">
+                <img src="./img/pic-3.jpg" alt="Profile Image" class="img-fluid rounded-circle shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me & Skills Section -->
+    <section id="aboutMe" class="about-skills-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 fade-in">
+                    <h2>About Me</h2>
+                    <p>I am a dedicated web developer with a strong foundation in both backend and frontend technologies, specializing in Java (Spring Boot), PHP (Laravel), and JavaScript. Over the years, I have worked on developing and maintaining enterprise-level applications, including Core Banking APIs, Mobile Banking solutions, and digital financial platforms. I take pride in writing clean, efficient code and optimizing system performance. Beyond coding, I enjoy problem-solving, continuous learning, and staying up-to-date with the latest industry trends to build scalable and innovative solutions. My goal is to create seamless, user-friendly applications that make a real impact.</p>
+                </div>
+                <div class="col-md-6 fade-in" id="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-bar">
+                        <p>Java & Spring Boot <i class="fa-brands fa-java fs-1"></i> </p>
+                        <div class="bar">
+                            <div class="progress java"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <p>JavaScript <i class="fa-brands fa-js fs-2"></i></p>
+                        <div class="bar">
+                            <div class="progress js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p> PHP & laravel <i class="fa-brands fa-php fs-2"></i> <i
+                                class="fa-brands fa-laravel fs-2"></i></p>
+                        <div class="bar">
+                            <div class="progress php"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>Apache Tomcat <img src="./img/Apache_Tomcat_logo.svg" style="width: 50px;"> </p>
+                        <div class="bar">
+                            <div class="progress apache-tomcat"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>Databases <i class="fa-solid fa-database fs-2"></i></p>
+                        <div class="bar">
+                            <div class="progress databases"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container fade-in">
+            <h2 class="text-center mb-4">Experience</h2>
+
+            <!-- First Company -->
+            <div class="experience-item">
+                <h4>Myanmar Information Technology Pte. Ltd.</h4>
+                <p class="text-muted">January 2023 - October 2024</p>
+                <ul>
+                    <li>Maintained and developed Core Banking APIs and Mobile Banking APIs</li>
+                    <li>Developed API services</li>
+                    <li>Maintained and developed Digital Financial Solutions</li>
+                    <li>Developed for Mobile Banking Admin Console App</li>
+                    <li>Deployed API services</li>
+                    <li>Supported and fixed issues based on customer requirements</li>
+                    <li>Performed unit testing</li>
+                </ul>
+            </div>
+
+            <!-- Current Company -->
+            <div class="experience-item">
+                <h4>NTT DATA Myanmar</h4>
+                <p class="text-muted">October 2024 - Present</p>
+                <ul>
+                    <li>Maintain and support the FIGW project, ensuring stable and efficient system performance.</li>
+                    <li>Investigate customer incidents and inquiries, providing timely resolutions to minimize disruptions.
+                    </li>
+                    <li>Analyze and debug system issues, collaborating with Japan HQ and internal teams to implement fixes.
+                    </li>
+                    <li>Work closely with clients and stakeholders, ensuring smooth communication and alignment with business needs.
+                    </li>
+                    <li>Improve system monitoring and performance optimization, proactively addressing potential risks.
+                    </li>
+                    <li>Document technical issues, resolutions, and process improvements for future reference.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5 text-center">
+        <div class="container fade-in">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch!</p>
+            <a href="mailto:kyawkokohein784@gmail.com" class="btn btn-light">Email Me</a>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            // Fade-in effect for other sections
+            $(".fade-in").css("opacity", "0").each(function (i) {
+                $(this).delay(500 * i).animate({ opacity: 1 }, 1000);
+            });
+
+            // Check if the skill bars are visible in the viewport
+            function checkSkillsInView() {
+                $(".skill-bar").each(function () {
+                    var skillBarTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    // If the skill bar is in the viewport, animate it
+                    if (skillBarTop < windowBottom - 50) {
+                        var skill = $(this).find(".progress");
+                        if (!skill.hasClass("animated")) {  // Check if already animated
+                            var width = skill.hasClass("java") ? "90%" :
+                                skill.hasClass("spring-boot") ? "90%" :
+                                    skill.hasClass("js") ? "70%" :
+                                        skill.hasClass("php") ? "85%" :
+                                            skill.hasClass("laravel") ? "85%" :
+                                                skill.hasClass("apache-tomcat") ? "70%" :
+                                                    skill.hasClass("databases") ? "90%" : "0%";
+                            skill.animate({ width: width }, 1000); // Animate over 1 second
+                            skill.addClass("animated"); // Prevent re-triggering the animation
+                        }
+                    }
+                });
+            }
+
+            // Call the function initially
+            checkSkillsInView();
+
+            // Trigger skill bar animation on scroll
+            $(window).on("scroll", function () {
+                checkSkillsInView();
+            });
+        });
+
+        const text = "I'm a passionate web developer, Kyaw Ko Ko Hein";
+        let index = 0;
+        const typingTextElement = document.getElementById("typingText");
+
+        function typeWriter() {
+            if (index < text.length) {
+                typingTextElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Adjust typing speed here (100ms per character)
+            }
+        }
+
+        // Start typing effect once the page is loaded
+        window.onload = function () {
+            typeWriter();
+        };
+    </script>
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        }
+
+        .about-skills-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-bar {
+            margin-bottom: 20px;
+        }
+
+        .bar {
+            width: 100%;
+            background: #333;
+            height: 8px;
+            border-radius: 5px;
+        }
+
+        .progress {
+            height: 8px;
+            background: #4CAF50;
+            width: 0;
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Typing effect */
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid;
+            width: 0;
+            animation: typing 4s steps(30) 1s forwards, blink-caret .75s step-end infinite;
+            /* Set the width of the paragraph to prevent button from shifting */
+            width: 25ch;
+            /* Adjust this width as needed based on text length */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 40ch;
+                /* This matches the width in the CSS above */
+            }
+        }
+
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+
+            100% {
+                border-color: #fff;
+            }
+        }
+
+        #experience {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        .experience-item {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .experience-item h4 {
+            color: #4CAF50;
+        }
+
+        .experience-item p {
+            font-style: italic;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+        }
+
+        .experience-item li {
+            margin-bottom: 5px;
+        }
+    </style>
+</body>
+
+</html>

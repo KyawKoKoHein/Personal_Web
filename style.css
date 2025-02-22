@@ -1,0 +1,103 @@
+/* Hero Section */
+.hero {
+    height: 100vh; /* Full screen height */
+    background-color: #333; /* Dark background */
+    position: relative;
+}
+
+.hero .container {
+    height: 100%; /* Ensure the container spans the full height */
+}
+
+.hero .text-center {
+    z-index: 10;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.hero .hero-image {
+    max-width: 300px;
+    margin-left: 50px;
+    z-index: 5;
+}
+
+.hero .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff;
+}
+
+/* About Me Section */
+#about-me {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+#about-me h2 {
+    font-size: 2rem;
+}
+
+#about-me p {
+    font-size: 1.2rem;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #222;
+    color: #fff;
+}
+
+#skills h2 {
+    font-size: 2rem;
+}
+
+#skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .hero .hero-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    #about-me h2, #skills h2 {
+        font-size: 1.5rem;
+    }
+}
